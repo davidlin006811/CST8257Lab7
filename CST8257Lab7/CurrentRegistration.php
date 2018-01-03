@@ -12,10 +12,7 @@
     $studentName = $student->getName();
  ?>
 
-<script>
-    $('#login').hide();
-    $('#logout').show();
-</script>
+
 <div class="current-registration">
     <h1>Current Registration</h1>
     <p>Hello <span class="highlight"><?php echo "$studentName" ?></span>(not you? change user <a href="Login.php">here</a>), the followings are your current registrations</p>
