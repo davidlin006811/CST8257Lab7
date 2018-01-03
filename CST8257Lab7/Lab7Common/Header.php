@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en" style="position: relative; min-height: 100%;">
 <head>
@@ -32,8 +33,15 @@
                <li class="active"><a href="Index.php">Home </a></li>
                <li><a href="CourseSelection.php">Course Selection</a></li>
                <li><a href="CurrentRegistration.php">Current Registration</a></li>
-               <li id = "login"><a href="login.php">Log In</a></li> 
-               <li id="logout" style="display: none"><a href="logout.php">Log Out</a></li>
+               <?php if(isset($_SESSION["loginStudent"])){
+                   echo "<li><a href='logout.php'>Log Out</a></li>";
+               }
+               else{
+                   echo "<li><a href='login.php'>Log In</a></li>";
+               }
+               ?>
+               
+               
             </ul>
         </div>
       </div>  
