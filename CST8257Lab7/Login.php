@@ -47,7 +47,7 @@ if (isset($btnLogin)) {
     <span class="loginError"><?php echo $loginError ?></span>
     <form action="Login.php" role="form" method="post">
         <div class="row horizontal-margin vertical-margin">
-            <div class ="col-sm-2 label-padding">Student ID:</div>
+            <div class ="col-sm-2 label-padding highlight">Student ID:</div>
             <div class = "col-sm-2">
                 <input type = "text" class = "form-control" name = "studentId" placeholder="Enter studentId" <?php echo "value = '$idVal'" ?> style="background-color:lightyellow"/>
             </div>
@@ -55,7 +55,7 @@ if (isset($btnLogin)) {
         </div>
         
         <div class="row horizontal-margin vertical-margin">
-            <div class ="col-sm-2 label-padding">Password:</div>
+            <div class ="col-sm-2 label-padding highlight">Password:</div>
             <div class = "col-sm-2">
                 <input type = "password" class = "form-control" name = "password" placeholder="Confirm password" <?php echo "value = '$passwordVal'"  ?> style="background-color:lightyellow"/>
             </div>

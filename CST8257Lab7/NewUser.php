@@ -79,35 +79,35 @@ if (isset($btnSignup)){
     <br/>
     <form action = "NewUser.php" role="form" method="post">
         <div class="row horizontal-margin vertical-margin">
-            <div class ="col-sm-2 label-padding">Student ID:</div>
+            <div class ="col-sm-2 label-padding highlight">Student ID:</div>
             <div class = "col-sm-2">
                 <input type = "text" class = "form-control" name = "studentId" placeholder="Enter studentId" <?php echo "value = '$idVal'" ?>/>
             </div>
             <div class="error col-sm-6"><?php echo $idError ?></div>
         </div>
         <div class="row horizontal-margin vertical-margin">
-            <div class ="col-sm-2 label-padding">Name:</div>
+            <div class ="col-sm-2 label-padding highlight">Name:</div>
             <div class = "col-sm-2">
                 <input type = "text" class = "form-control" name = "studentName" placeholder="Enter student name" <?php echo "value = '$nameVal'" ?>/>
             </div>
             <div class="error col-sm-6"><?php echo $nameError ?></div>
         </div>
         <div class= "row horizontal-margin vertical-margin">
-            <div class ="col-sm-2 label-padding">Phone Number: <br/>(nnn-nnn-nnnn)</div>
+            <div class ="col-sm-2 label-padding highlight">Phone Number: <br/>(nnn-nnn-nnnn)</div>
             <div class = "col-sm-2">
                 <input type = "text" class = "form-control" name = "phoneNumber" placeholder="nnn-nnn-nnnn" <?php echo "value='$phoneVal'" ?> />
             </div>
             <div class="error col-sm-6"><?php echo "$phoneError"; ?></div>
         </div>
         <div class="row horizontal-margin vertical-margin">
-            <div class ="col-sm-2 label-padding">Password:</div>
+            <div class ="col-sm-2 label-padding highlight">Password:</div>
             <div class = "col-sm-2">
                 <input type = "password" class = "form-control" name = "password" placeholder="Confirm password" <?php echo "value = '$passwordVal'" ?>/>
             </div>
             <div class="error col-sm-6"><?php echo $passwordError ?></div>
         </div>
          <div class="row horizontal-margin vertical-margin">
-            <div class ="col-sm-2 label-padding">Password Again:</div>
+            <div class ="col-sm-2 label-padding highlight">Password Again:</div>
             <div class = "col-sm-2">
                 <input type = "password" class = "form-control" name = "password2" placeholder="Enter password" <?php echo "value = '$repasswordVal'" ?>/>
             </div>
