@@ -31,8 +31,18 @@ if (isset($btnLogin)) {
         $student = StudentLogin($studentId, $password);
         
         if ($student != NULL){
+           
             $_SESSION["loginStudent"] = serialize($student);
-            header("location:CourseSelection.php");
+             if (isset($_SESSION['attemptAccessPage'])) {
+                $accesslink = "location:".$_SESSION['attemptAccessPage'];
+                $_SESSION['attemptAccessPage'] = NULL;
+                header($accesslink);
+                
+            }
+            else{
+                header("location:CourseSelection.php");
+            }
+            
             exit();
         }
         else{
