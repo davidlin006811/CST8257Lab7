@@ -9,7 +9,7 @@
         <link href="/AlgCommon/Contents/AlgCss/Site.css" rel="stylesheet" type="text/css"/> 
         <link href="/CST8257Lab7/Lab7Contents/Lab7.css" rel="stylesheet" type="text/css"/>
         <script src="/AlgCommon/Scripts/jquery-2.2.4.min.js" type="text/javascript"></script>
-       
+        <script src="/CST8257Lab7/Lab7Scripts/Site.js" type="text/javascript"></script>
 </head>
 <body style="padding-top: 50px; margin-bottom: 60px">
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
@@ -40,9 +40,7 @@
                    echo "<li><a href='login.php'>Log In</a></li>";
                }
                ?>
-               
-               
-            </ul>
+           </ul>
         </div>
       </div>  
     </nav>

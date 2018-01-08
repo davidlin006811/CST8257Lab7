@@ -10,7 +10,7 @@
                  </p>
             	</div>
         </footer>
-       <script src="/CST8257Lab7/Lab7Scripts/Site.js" type="text/javascript"></script>
+       
       
        <script src="/AlgCommon/Contents/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
