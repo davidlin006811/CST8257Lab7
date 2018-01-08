@@ -35,3 +35,50 @@
 .highlight{
     font-weight: 700;
 }
+.text-center{
+    text-align: center;
+}
+.course-selection{
+    width:95%;
+    margin:auto;
+}
+.course-table{
+    height:200px;
+    width:100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.registration-table .table,
+.course-table .table{
+    border-top: 1px solid #dddddd;
+}
+
+.btn-submit {
+    margin-left: 1000px;
+}
+.semester-list {
+    margin-bottom: 20px;
+    marign-right:100px;
+    float:right;
+}
+.clearfix{
+    clear: both;
+}
+.registration-table {
+    width:100%;
+    height:350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.registration-table .table span{
+    padding-right:10px;
+    text-align: right;
+    font-weight: 700;
+}
+.btn-deselect{
+    margin-left: 700px;
+}
+.current-registration{
+    width:95%;
+    margin: auto;
+}
