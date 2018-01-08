@@ -35,7 +35,6 @@ if (isset($btnLogin)) {
             $_SESSION["loginStudent"] = serialize($student);
              if (isset($_SESSION['attemptAccessPage'])) {
                 $accesslink = "location:".$_SESSION['attemptAccessPage'];
-                $_SESSION['attemptAccessPage'] = NULL;
                 header($accesslink);
                 
             }

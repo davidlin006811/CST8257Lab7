@@ -1,10 +1,11 @@
 <?php
+session_start();
 include 'Lab7Common/Header.php';
 include 'Lab7Common/Functions.php';
 extract($_POST);
 $idError = $nameError = $phoneError = $passwordError = $repasswordError = "";
 $idVal = $nameVal = $phoneVal = $passwordVal = $repassowrdVal = "";
-if (isset($btnSignup)){
+if (isset($btnSignup) && ($_SESSION['key'] == $hiddenKey)){
     $validateSuccess = TRUE;
     // validate student id
     $idValidateSuccess = ValidateStudentId($studentId);
@@ -69,15 +70,18 @@ if (isset($btnSignup)){
         else {
             echo "<script>alert('Add a new student record success!')</script>";
             $idVal = $nameVal = $phoneVal = $passwordVal = $repassowrdVal = "";
+            
         }
     }
 }
+$_SESSION['key'] = mt_rand(0, 1000000);
 ?>
 <div class = "signup">
     <h1 class="signup-title">Sign Up</h1>
     <p style="padding-left: 70px">All fields are required</p>
     <br/>
     <form action = "NewUser.php" role="form" method="post">
+        <input type="hidden" name="hiddenKey" value="<?php echo $_SESSION['key'] ?>"/>
         <div class="row horizontal-margin vertical-margin">
             <div class ="col-sm-2 label-padding highlight">Student ID:</div>
             <div class = "col-sm-2">

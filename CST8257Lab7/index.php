@@ -1,7 +1,7 @@
 <?php 
 session_start();
 include 'Lab7Common/Header.php';
-if ($_SESSION["loginStudent"] != NULL ) {
+if (isset($_SESSION["loginStudent"]) ) {
     header("location:CourseSelection.php");
     exit();
 }
